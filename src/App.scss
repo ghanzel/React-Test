@@ -1,0 +1,72 @@
+$link-color: gray;
+$link-decoration: none;
+$user-font: darkslategray;
+$para-font: gray;
+
+.mediaCard {
+  background-color: rgb(236, 243, 247);
+  color: $para-font;
+  width: 350px;
+  margin: 150px;
+  box-shadow: 8px 8px 8px rgb(81, 101, 107);
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.avatar {
+  color: $user-font;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  }
+}
+
+.user {
+  margin-left: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  h2,
+  p {
+    margin: 5px 10px 0px 10px;
+  }
+}
+
+.commentText {
+  margin: 18px 0px;
+  p {
+    text-align: justify;
+  }
+}
+
+.footer {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a,
+  a:visited,
+  a:hover {
+    color: $link-color;
+    text-decoration: $link-decoration;
+  }
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  * {
+    margin: 0px;
+  }
+}
+
+.fa-heart {
+  color: red;
+  margin-left: 15px;
+  font-size: 34px;
+}
